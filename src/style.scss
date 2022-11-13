@@ -61,13 +61,12 @@ body {
         justify-content: space-around;
         cursor: pointer;
         font-size: 20px;
-        a{
+        a {
           &:hover {
-          opacity: 0.7;
-        }
+            opacity: 0.7;
+          }
         }
       }
-
     }
   }
 
@@ -100,7 +99,7 @@ body {
       margin-top: 40px;
     }
 
-    .food:last-of-type{
+    .food:last-of-type {
       margin-bottom: 40px;
     }
   }
@@ -153,6 +152,10 @@ body {
       }
       .food:first-of-type {
         margin-top: auto;
+      }
+
+      .food:last-of-type {
+        margin-bottom: auto;
       }
     }
   }
