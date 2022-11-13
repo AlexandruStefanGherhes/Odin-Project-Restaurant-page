@@ -1,0 +1,159 @@
+@import "./scss/resets";
+
+body {
+  min-height: 100vh;
+  background: url(https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)
+    no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.div {
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+    .nav {
+      // min-width: 30%;
+      width: 50%;
+      display: flex;
+
+      .categories {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        a {
+          text-decoration: none;
+          color: white;
+          margin-top: 20px;
+          cursor: pointer;
+        }
+
+        a:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+
+  .main {
+    display: grid;
+    place-items: center;
+    min-height: 85.2vh;
+
+    .about {
+      display: grid;
+      place-items: center;
+      color: white;
+      text-align: center;
+      background: rgba(0, 0, 0, 0.7);
+      height: 200px;
+      padding: 32px;
+      line-height: 1.4;
+    }
+
+    .about {
+      .icons {
+        width: 30%;
+        display: flex;
+        justify-content: space-around;
+        cursor: pointer;
+        font-size: 20px;
+        a{
+          &:hover {
+          opacity: 0.7;
+        }
+        }
+      }
+
+    }
+  }
+
+  .menu {
+    display: grid;
+    gap: 30px;
+    width: 60%;
+    grid-template-columns: 1fr;
+    color: white;
+
+    .food {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.7);
+      text-align: center;
+      p {
+        padding: 10px;
+      }
+
+      img {
+        width: 100%;
+        object-fit: cover;
+        height: 200px;
+        margin-bottom: 10px;
+      }
+    }
+
+    .food:first-of-type {
+      margin-top: 40px;
+    }
+
+    .food:last-of-type{
+      margin-bottom: 40px;
+    }
+  }
+
+  .footer {
+    display: flex;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 14px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .div {
+    .header {
+      .nav {
+        width: 300px;
+      }
+    }
+  }
+
+  .main {
+    .about {
+      width: 30%;
+    }
+    .menu {
+      display: grid;
+      gap: 30px;
+      width: 40%;
+      grid-template-columns: repeat(2, 1fr);
+      color: white;
+
+      .food {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.7);
+        text-align: center;
+        p {
+          padding: 10px;
+        }
+
+        img {
+          width: 100%;
+          object-fit: cover;
+          height: 200px;
+          margin-bottom: 20px;
+        }
+      }
+      .food:first-of-type {
+        margin-top: auto;
+      }
+    }
+  }
+}
